@@ -90,7 +90,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 mb-4 mb-lg-0">
             <div class="about-img fadeInUp animated">
-              <img class="img-fluid" src="{{asset('asset/images/home-01/about1.jpg')}}" alt="">
+              <img class="img-fluid" src="{{asset('asset/images/home-01/about1.jpeg')}}" alt="">
             </div>
           </div>
           <div class="col-12 col-lg-6">
@@ -268,6 +268,18 @@
             <div class="owl-carousel" data-nav-dots="false" data-nav-arrow="true" data-items="2" data-xl-items="2" data-lg-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1"  data-autoheight="true">
               <div class="item  mb-4 mb-lg-0">
                 <div class="player">
+                  <img class="img-fluid" src="{{asset('asset/images/home-01/fred.jpeg')}}" alt="">                    
+                </div>
+                <div class="player-info">
+                  <span class="player-number">U17</span>
+                  <div class="player-name">
+                    <h3 class="text-uppercase title"><a href="#">ADANLIN Daniel</a></h3>
+                    <span class="text-uppercase text-primary">Prodigue en Côte d'Ivoire</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item  mb-4 mb-lg-0">
+                <div class="player">
                   <img class="img-fluid" src="{{asset('asset/images/home-01/prodigue.jpeg')}}" alt="">                    
                 </div>
                 <div class="player-info">
@@ -395,14 +407,14 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> <hr>
               <div class="accordion-item mb-0">
-                <h2 class="accordion-header" id="flush-headingfive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                <h2 class="accordion-header" id="flush-headingsix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
                 TENNIS DE TABLE 
                 </button>
                 </h2>
-                <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <p class="text-white">Le tennis de table est un sport rapide et technique, nécessitant des réflexes aiguisés, une précision de frappe et une stratégie élaborée. Il est apprécié pour son accessibilité, sa dynamique de jeu intense et ses compétitions internationales passionnantes.</p>
                     <ul class="ps-3 mb-0 text-white">
