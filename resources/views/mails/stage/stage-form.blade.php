@@ -1,4 +1,5 @@
 <x-mail::message>
+    # Bonjour {{ config('app.name') }}
 Vous avez reçu une demande de Stage de {{ $data['nom'] }} . <br>
 Voici ses informations <br>
 Email : {{ $data['email'] }} <br>
