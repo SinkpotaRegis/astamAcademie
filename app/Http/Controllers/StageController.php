@@ -19,7 +19,7 @@ class StageController extends Controller
             'motivation' => 'required',
         ]);
 
-        Mail::to('stagepro@astam-academy-benin.com')->send(new StageMail($data));
+        Mail::to('contact@astam-academy-benin.com')->send(new StageMail($data));
 
         return redirect('/stage')->with('message', 'Votre demande de stage a été bien envoyée');
     }
