@@ -194,6 +194,40 @@
 
 @yield('navbar')
 
+    <!--=================================
+    client -->
+    <section class="client-logo py-5 bg-white">
+      <h2 class="mb-0 text-black">Nos Partenaires & Sponsors</h2> 
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <div class="owl-carousel" data-nav-dots="false" data-nav-arrow="false" data-items="5" data-lg-items="5" data-md-items="3" data-sm-items="3" data-xs-items="2" data-xx-items="1" data-space="0" data-autoheight="true">
+              <div class="item">
+                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat1.png')}}" alt="">
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat2.png')}}" alt="">
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat3.png')}}" alt="">
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat8.jpg')}}" alt="">
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat9.jpg')}}" alt="">
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/codeanytime.png')}}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================================
+    client -->
+
 <!--=================================
 Footer -->
     <footer class="footer">

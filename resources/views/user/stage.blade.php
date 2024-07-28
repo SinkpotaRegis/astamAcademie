@@ -42,22 +42,22 @@ Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindr
       @csrf
       <div class="row">
         <div class="mb-3 col-md-6">
-          <input type="text" class="form-control" id="first-name" placeholder="Nom et Prénom">
+          <input type="text" name="nom" class="form-control" id="first-name" placeholder="Nom et Prénom">
         </div>
         <div class="mb-3 col-md-6">
-          <input type="email" class="form-control" id="email" placeholder="Email">
+          <input type="email" name="email" class="form-control" id="email" placeholder="Email">
         </div>
         <div class="mb-3 col-md-6">
-          <input type="text" class="form-control" id="phone" placeholder="Phone">
+          <input type="number" name="phone" class="form-control" id="phone" placeholder="Phone">
         </div>
         <div class="mb-3 col-md-6">
-            <input type="text" class="form-control" id="poste" placeholder="Poste">
+            <input type="text" name="poste" class="form-control" id="poste" placeholder="Poste">
           </div>
           <div class="mb-3 col-md-6">
-            <input type="text" class="form-control" id="categorie" placeholder=" Catégorie">
+            <input type="text" name="categorie" class="form-control" id="categorie" placeholder=" Catégorie">
           </div>
         <div class="mb-3 col-md-6">
-          <select class="form-control basic-select" aria-placeholder="Pays">
+          <select name="pays" class="form-control basic-select" aria-placeholder="Pays d'origine">
             <option value="1" selected="desabled">Pays d'origine</option>
             <option value="ARM">Armenia</option>
             <option value="AR">Argentina</option>
@@ -132,7 +132,7 @@ Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindr
           </select>
         </div>
         <div class="col-lg-12">
-          <textarea class="form-control" rows="5" placeholder="Motivation (Pourquoi choisir ASTAM ?)"></textarea>
+          <textarea class="form-control" rows="5" name="motivation" placeholder="Motivation (Pourquoi choisir ASTAM ?)"></textarea>
         </div>
       </div>
       <div class="mt-4">
