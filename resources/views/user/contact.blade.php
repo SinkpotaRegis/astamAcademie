@@ -91,8 +91,6 @@
             </div>
 
             @if(!session()->has('message'))
-
-  
             <form action="/contactmail" method="post">
               @csrf
               <div class="col-lg-7">

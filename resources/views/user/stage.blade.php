@@ -136,10 +136,11 @@ Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindr
         </div>
       </div>
       <div class="mt-4">
-       <a href="" class="btn btn-primary">Envoyez votre demande</a>
+        <button class="btn btn-primary" type="submit">Envoyez votre demande</button>
        </div>
     </form>
     @endif
   </div>
+  <br> <br> <br>
 
 @endsection
