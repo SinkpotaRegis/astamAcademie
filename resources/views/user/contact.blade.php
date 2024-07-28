@@ -73,6 +73,7 @@
                     <h5 class="feature-title">Phone</h5>
                     <span>+229 67 979 001</span>
                     <span>+229 53 001 166</span>
+                    <span>+229 47 412 725</span>
                   </div>
                 </div>
   
@@ -82,7 +83,7 @@
                   </div>
                   <div class="feature-content">
                     <h5 class="feature-title">Email</h5>
-                    <span>academie.team2022@gmail.com</span>
+                    <span>contact@astam-academy-benin.com</span>
                   </div>
                 </div>
           

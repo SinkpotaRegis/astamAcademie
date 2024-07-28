@@ -39,12 +39,14 @@
                             <div class="intro-y col-span-12 sm:col-span-6">
                                 <div class="mb-2">Catégorie</div>
                                 <select name="categorie" class="input w-full border flex-1">
-                                    <option disabled>U9...U17</option>
+                                    <option disabled>U7...U20</option>
+                                    <option>U7</option>
                                     <option>U9</option>
                                     <option>U11</option>
                                     <option>U13</option>
                                     <option>U15</option>
                                     <option>U17</option>
+                                    <option>U20</option>
                                 </select>
                             </div>
                             <div class="intro-y col-span-12 sm:col-span-6">
