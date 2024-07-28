@@ -9,7 +9,7 @@
     <title>ASTAM - ACADEMY - BENIN</title>
 
     <!-- Favicon -->
-   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="shortcut icon" href="{{asset('asset/images/logo1.png')}}">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
