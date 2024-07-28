@@ -37,7 +37,9 @@ End Nos infos stages -->
 Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindre sur les différents réseaux sociaux pour vour tenir informer de l’évolution de ASTAM
  !") }}</p>
     </div>
-    <form>
+    @if(!session()->has('message'))
+    <form method="post" action="/stagemail" enctype="multipart/form-data">
+      @csrf
       <div class="row">
         <div class="mb-3 col-md-6">
           <input type="text" class="form-control" id="first-name" placeholder="Nom et Prénom">
@@ -49,7 +51,7 @@ Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindr
           <input type="text" class="form-control" id="phone" placeholder="Phone">
         </div>
         <div class="mb-3 col-md-6">
-            <input type="text" class="form-control" id="poste" placeholder="Poste Catégorie">
+            <input type="text" class="form-control" id="poste" placeholder="Poste">
           </div>
           <div class="mb-3 col-md-6">
             <input type="text" class="form-control" id="categorie" placeholder=" Catégorie">
@@ -66,6 +68,7 @@ Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindr
             <option value="BH">Bahrain</option>
             <option value="BD">Bangladesh</option>
             <option value="BB">Barbados</option>
+            <option value="BN">Benin</option>
             <option value="KH">Cambodia</option>
             <option value="CM">Cameroon</option>
             <option value="CA">Canada</option>
@@ -81,6 +84,7 @@ Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindr
             <option value="GA">Gabon</option>
             <option value="GM">Gambia</option>
             <option value="GE">Georgia</option>
+            <option value="GE">Ghana</option>
             <option value="HT">Haiti</option>
             <option value="HK">Hong Kong</option>
             <option value="HU">Hungary</option>
@@ -128,13 +132,14 @@ Sont actuellement en cours de l’élaboration et nous invitons à nous rejoindr
           </select>
         </div>
         <div class="col-lg-12">
-          <textarea class="form-control" rows="5" placeholder="Motivation"></textarea>
+          <textarea class="form-control" rows="5" placeholder="Motivation (Pourquoi choisir ASTAM ?)"></textarea>
         </div>
       </div>
       <div class="mt-4">
-       <a href="" class="btn btn-primary">Envoie</a>
+       <a href="" class="btn btn-primary">Envoyez votre demande</a>
        </div>
     </form>
+    @endif
   </div>
 
 @endsection

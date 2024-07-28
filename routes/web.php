@@ -6,6 +6,7 @@ use App\Http\Controllers\astamController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LangageController;
+use App\Http\Controllers\StageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,6 +76,7 @@ Route::post('/add/actualite', [adminController::class,'AddActulite'])->name('Pos
 Route::post('/update/coach', [adminController::class,'CoachUpdate'])->name('Updatecoach');
 Route::post('/update/joueur', [adminController::class,'JoueurUpdate'])->name('Updatejoueur');
 Route::post('/contactmail', [ContactController::class,'store'])->name('contactmail');
+Route::post('/stagemail', [StageController::class,'store'])->name('stagemail');
 Route::post('/dologin/connect', [AuthController::class,'dologin'])->name('dologin');
 
 // Langage
