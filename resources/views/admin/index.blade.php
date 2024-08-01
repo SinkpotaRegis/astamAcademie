@@ -99,6 +99,9 @@
                 </div>
                         <!-- BEGIN: General Report -->
                         <div class="col-span-12 mt-8">
+                            <div class="intro-y col-span-12 flex items-center justify-center sm:justify-end mt-5">
+                                <button type="submit" class="button w-24 justify-center block bg-theme-1 text-white ml-2"><a href="{{route('getvideo')}}">Ajouter une vidéo</a></button>
+                            </div>
                             <div class="intro-y flex items-center h-10">
                                 <h2 class="text-lg font-medium truncate mr-5">
                                     Récapitulatif des effectifs
