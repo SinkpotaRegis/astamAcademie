@@ -71,14 +71,14 @@
                     <div class="history-info-number order-md-2">
                       <div class="time">
                         <div class="text-center">
-                          <span class="month">parakou</span>
+                          <span class="month">Parakou</span>
                           <span class="year">2022</span>
                         </div>
                       </div> 
                     </div>
                     <div class="history-info-content order-md-1">
                       <h4 class="history-info-title mb-2"><a href="#">Champions of europe 2018 - 2019</a></h4>
-                      <p class="text-white">Équipes féminines première Vice championne du tournoi coody's coup à </p>
+                      <p class="text-white">Équipes féminines première Vice championne du tournoi coody's coup à Parakou en 2022</p>
                     </div>
                   </div>
                   <div class="history-info-item pb-0">

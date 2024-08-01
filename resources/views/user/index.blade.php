@@ -10,6 +10,47 @@
   .blog-post {
       margin-bottom: 20px;
   }
+  .video-post {
+    margin-bottom: 20px;
+}
+
+.video-image {
+    position: relative;
+}
+
+.video-image img {
+    width: 100%;
+    height: auto;
+}
+
+.video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+}
+
+.video-post-details {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+}
+
+.video-title a, .video-view a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.video-title a:hover, .video-view a:hover {
+    text-decoration: underline;
+}
+.aaaa {
+  width : 100px;
+  height : 80px ;
+ }
+
 </style>
     <!--=================================
     Banner -->
@@ -90,7 +131,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 mb-4 mb-lg-0">
             <div class="about-img fadeInUp animated">
-              <img class="img-fluid" src="{{asset('asset/images/home-01/about1.jpeg')}}" alt="">
+              <img class="img-fluid" src="{{asset('asset/images/home-01/about1.jpg')}}" alt="">
             </div>
           </div>
           <div class="col-12 col-lg-6">
@@ -99,7 +140,7 @@
               <p class="text-white">
                 {{ __('Assurer une formation morale, éducative, sociale et physique par la pratique du sport en général et du football en particulier ceci sans distinction de sexe, de religion.') }}</p>
               <p class="text-white">                
-                {{ __("Offrir aux plus démunis que cela soit  la possibilité ou l’opportunité de développer leurs potentielle dans le but de leurs fournis en matérielle connaissances et conseilles, les éléments nécessaires à la pratique du sport en général et du football en particulier") }}</p>
+                {{ __("Offrir aux plus démunis que cela soit  la possibilité ou l’opportunité de développer leur potentiel dans le but de leur fournir en matérielle connaissances et conseils, les éléments nécessaires à la pratique du sport en général et du football en particulier") }}</p>
             </div>
             <div class="row counter-box">
               <div class="col-sm-4">
@@ -164,16 +205,27 @@
           </div>
           <div class="col-lg-12 col-xl-6 mt-md-5 mt-xl-0">
             <div class="video-style-vertical">
-              <div class="video-post">
-                <div class="video-image"> <img class="img-fluid" src="{{asset('asset/images/home-01/m1.jpg')}}
-                  " alt="">
-                  <div class="video-icon"><a href="" class="popup-youtube"><i class="fa-solid fa-video"></i></a></div>
+              @foreach ($video as $item)
+            <div class="video-post">
+          <div class="video-image">
+            <a href="{{ $item->videopath }}" target="_blank">
+                <img src="{{asset('storage/' . $item->photo)}}" alt="">
+                <div class="video-icon">
+                    <i class="fa-solid fa-video"></i>
                 </div>
-                <div class="video-post-details"> <span class="badge">Jeu</span>
-                  <h6 class="video-title"><a href="">Le jeu est notre passion. Nous créons des jeux amusants que vous allez adorer</a></h6>
-                  <div class="video-view"> <a href="#">10M vues</a> <a href="#"></a> </div>
-                </div>
-              </div>
+            </a>
+        </div>
+        <div class="video-post-details">
+            <span class="badge">Jeu</span>
+            <h6 class="video-title">
+                <a href="{{ $item->videopath }}" target="_blank">{{ $item->description}}</a>
+            </h6>
+            <div class="video-view">
+                <a href="{{ $item->videopath }}" target="_blank">10M vues</a>
+            </div>
+        </div>
+      </div>
+      @endforeach
             </div>
 
           </div>
@@ -328,7 +380,7 @@
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p class="text-white">Soit collectif joué entre deux équipes de onze joueurs deux gardiens et dix joueurs joueur de champ avec un ballon, ce sport est le plus populaire au monde.</p>
+                    <p class="text-white">Un sport collectif joué entre deux équipes de onze joueurs deux gardiens et dix joueurs joueur de champ avec un ballon, ce sport est le plus populaire au monde.</p>
                     <ul class="ps-3 mb-0 text-white">
                       <li class="mb-2">Le football est le sport le plus populaire au monde, avec des milliards de fans et des millions de joueurs amateurs et professionnels.</li>
                       <li class="mb-2">Le football génère des milliards de dollars en revenus grâce aux droits de diffusion télévisée, aux parrainages, à la vente de billets, et aux produits dérivés</li>
@@ -392,7 +444,7 @@
               <div class="accordion-item mb-0">
                 <h2 class="accordion-header" id="flush-headingfive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
-                FOOUTSALL | FUTSAL 
+                FUTSAL 
                 </button>
                 </h2>
                 <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">

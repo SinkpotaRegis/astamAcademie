@@ -60,6 +60,7 @@ Route::get('actualite', [adminController::class,'actualite'])->name('getactualit
 Route::get('infosstage', [adminController::class,'InfosStage'])->name('getinfosstage');
 Route::get('addgalerie', [adminController::class,'AddGalerie'])->name('getaddgalerie');
 Route::get('addcalendrier', [adminController::class,'AddCalendrier'])->name('getaddcalendrier');
+Route::get('video', [adminController::class,'Addvideo'])->name('getvideo');
 
 
 
@@ -69,6 +70,7 @@ Route::get('addcalendrier', [adminController::class,'AddCalendrier'])->name('get
 Route::post('add/coach', [adminController::class,'addcoach'])->name('Postaddcoach');
 Route::post('/add/calendrier', [adminController::class,'Postcalendrier'])->name('Postaddcalendrier');
 Route::post('/add/joueur', [adminController::class,'AddJoueur'])->name('Postaddjoueur');
+Route::post('/add/video', [adminController::class,'Postvideo'])->name('postevideo');
 Route::post('/add/galerie', [adminController::class,'Postgalerie'])->name('Postaddgalerie');
 Route::post('/add/infosstage', [adminController::class,'AddInfosStages'])->name('Postinfosstage');
 Route::post('/add/staff', [adminController::class,'AddStaff'])->name('PostaddStaff');

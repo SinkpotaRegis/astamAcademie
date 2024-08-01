@@ -11,6 +11,7 @@ use App\Models\InfoStage;
 use App\Models\Joueur;
 use App\Models\Staff;
 use App\Models\User;
+use App\Models\Video;
 use Illuminate\Http\Request;
 use Illuminate\Notifications\Action;
 use Illuminate\Support\Facades\Hash;
@@ -25,11 +26,14 @@ class astamController extends Controller
         //     'email'=>'ahotontadagbe@gmail.com',
         //     'password'=>Hash::make('9185'),
         // ]);
-
+        $video = Video::latest()->take(6)->get();;
         // Seuls les six derniers éléments pourront s'afficher sur la page
         $actualite = Actualite::latest()->take(6)->get();
-        return view('user.index', compact('actualite'));
+        return view('user.index', compact('actualite','video'));
+
+        
     }
+
 
     public function calendrier(){
         $calendar = Calendrier::latest()->take(10)->get();
@@ -70,7 +74,8 @@ class astamController extends Controller
 
     public function team(){
         $staff = Staff::all();
-        return view('user.team',compact('staff'));
+        $coach = Entraineur::all();
+        return view('user.team',compact('staff','coach'));
     }
 
     public function Galerie(){

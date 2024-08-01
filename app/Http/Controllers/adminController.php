@@ -10,6 +10,7 @@ use App\Models\Galerie;
 use App\Models\InfoStage;
 use App\Models\Joueur;
 use App\Models\Staff;
+use App\Models\Video;
 
 class adminController extends Controller
 {
@@ -19,6 +20,9 @@ class adminController extends Controller
 
     public function AddEntraineur(){
         return view('admin.ajoutEntraineur');
+    }
+    public function Addvideo(){
+        return view('admin.video');
     }
     public function ListeEntraineur(){
         $coach = Entraineur::all();
@@ -277,6 +281,23 @@ class adminController extends Controller
     
             // Retourner une réponse
             return redirect()->back()->with('success', 'Enregistrement effectué avec succes');
+       
+    }
+    public function Postvideo(Request $request){
+        $video = new Video();
+        $request->validate([
+            'videopath'=>'required',
+            'photo'=>'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'description'=>'required',
+        ]);
+        $path = $request->file('photo')->store('photos', 'public');
+        $video->videopath = $request->videopath;
+        $video->photo = $path;
+        $video->description = $request->description;
+        $video->save();
+    
+            // Retourner une réponse
+        return redirect()->back()->with('success', 'Enregistrement effectué avec succes');
        
     }
 }
