@@ -10,6 +10,7 @@
   .blog-post {
       margin-bottom: 20px;
   }
+  
   .video-post {
     margin-bottom: 20px;
 }
@@ -50,6 +51,74 @@
   width : 100px;
   height : 80px ;
  }
+
+ .latest-news {
+  background-color: #1d1f21;
+  padding: 60px 0;
+}
+
+.section-title h2 {
+  color: #f3f1f1;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.blog-post {
+  background: #0c0b0b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: translateY(-10px);
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-post-details {
+  padding: 20px;
+}
+
+.blog-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.blog-title a:hover {
+  color: #007bff;
+}
+
+.blog-post-details p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #0056b3;
+}
+
 
 </style>
     <!--=================================
@@ -486,146 +555,8 @@
     DISCIPLINES -->
 
     <!--=================================
-    Points Table -->
-    {{-- <section class="space-ptb match-points-table">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
-              <h2 class="mb-0 text-white">Points Table</h2> 
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5 align-items-center">
-          <div class="col-12">            
-            <div class="points-table">
-              <div class="table-responsive">
-                <table class="table">
-                  <thead class="">
-                    <tr>
-                      <th scope="col">POS</th>
-                      <th scope="col">TEAM</th>
-                      <th scope="col">MP</th>
-                      <th scope="col">W</th>
-                      <th scope="col">D</th>
-                      <th scope="col">L</th>
-                      <th scope="col">GF</th>
-                      <th scope="col">GA</th>
-                      <th scope="col">GD</th>
-                      <th scope="col">PTS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-01.png')}}" alt=""><span>Victorious Secret</span> </div></td>
-                      <td>6</td>
-                      <td>5</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>20</td>
-                      <td>6</td>
-                      <td>14</td>
-                      <td>15</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-02.png')}}" alt=""><span>Ligers</span></div></td>
-                      <td>6</td>
-                      <td>5</td>
-                      <td>0</td>
-                      <td>1</td>
-                      <td>17</td>
-                      <td>6</td>
-                      <td>11</td>
-                      <td>15</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-03.png')}}" alt=""><span>Ladybugs United</span></div></td>
-                      <td>6</td>
-                      <td>4</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td>12</td>
-                      <td>7</td>
-                      <td>5</td>
-                      <td>12</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-04.png')}}" alt=""><span>Cheetahs</span></div></td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>7</td>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>11</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-05.png')}}" alt=""><span>Chili Peppers</span></div></td>
-                      <td>6</td>
-                      <td>3</td>
-                      <td>1</td>
-                      <td>2</td>
-                      <td>10</td>
-                      <td>7</td>
-                      <td>3</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-06.png')}}" alt=""><span>Hooligans FC</span></div></td>
-                      <td>6</td>
-                      <td>2</td>
-                      <td>1</td>
-                      <td>3</td>
-                      <td>12</td>
-                      <td>12</td>
-                      <td>0</td>
-                      <td>7</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">7</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-07.png')}}" alt=""><span>En Fuego CF</span></div></td>
-                      <td>6</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td>4</td>
-                      <td>11</td>
-                      <td>16</td>
-                      <td>-5</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">8</th>
-                      <td><div class="team-name"><img class="img-fluid" src="{{asset('asset/images/home-01/team-logo-08.png')}}" alt=""><span>Terminators</span></div></td>
-                      <td>6</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td>6</td>
-                      <td>2</td>
-                      <td>22</td>
-                      <td>-20</td>
-                      <td>0</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> --}}
-    <!--=================================
-    Points Table -->
-
-    <!--=================================
     Derniere news -->
-    <section class="space-ptb latest-news latest-news-pattern">
+    {{-- <section class="space-ptb latest-news latest-news-pattern">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -649,40 +580,40 @@
           </div>
           @endforeach
       </div>
-    </section>
-    <!--=================================
-    Latest News -->
-
-    <!--=================================
-    client -->
-    <section class="client-logo py-5 bg-white">
-      <h2 class="mb-0 text-black">Nos Partenaires & Sponsors</h2> 
+    </section> --}}
+    <section class="space-ptb latest-news latest-news-pattern">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-12">
-            <div class="owl-carousel" data-nav-dots="false" data-nav-arrow="false" data-items="5" data-lg-items="5" data-md-items="3" data-sm-items="3" data-xs-items="2" data-xx-items="1" data-space="0" data-autoheight="true">
-              <div class="item">
-                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat1.png')}}" alt="">
-              </div>
-              <div class="item">
-                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat2.png')}}" alt="">
-              </div>
-              <div class="item">
-                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat3.png')}}" alt="">
-              </div>
-              <div class="item">
-                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat8.jpg')}}" alt="">
-              </div>
-              <div class="item">
-                <img class="img-fluid" src="{{asset('asset/images/home-01/client-logo/pat9.jpg')}}" alt="">
-              </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h2 class="mb-0">{{ __('Dernières nouvelles') }}</h2>
             </div>
           </div>
         </div>
+        <div class="row mt-5">
+          @foreach ($actualite as $act)
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="blog-post post-style-01">
+              <div class="blog-image">
+                <img class="img-fluid" src="{{ asset('storage/' . $act->photo) }}" alt="{{ $act->titre }}">
+              </div>
+              <div class="blog-post-details">
+                <h5 class="blog-title mb-2"><a href="#">{{ $act->titre }}</a></h5>
+                <p class="text-white mb-4">
+                  {{ \Illuminate\Support\Str::limit($act->description, 255, '...') }}
+                  <a href="{{ route('article.show', $act->id) }}" target="_blank" class="read-more">Lire la suite</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          @endforeach
+        </div>
       </div>
     </section>
+    
     <!--=================================
-    client -->
+    Dernières News -->
+
 
 
 @endsection

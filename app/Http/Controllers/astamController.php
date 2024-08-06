@@ -82,4 +82,9 @@ class astamController extends Controller
         $album = Galerie::all();
         return view('user.galerie',compact('album'));
     }
+
+    public function detailArticle($id){
+        $article = Actualite::findOrFail($id);
+        return view('user.detailArticle', compact('article'));
+    }
 }

@@ -43,6 +43,8 @@ Route::middleware('langage')->group(function () {
     Route::get('galerie', [astamController::class,'Galerie'])->name('getgalerie');
     Route::get('login', [AuthController::class,'login'])->name('getlogin');
     Route::get('calendrier', [astamController::class,'calendrier'])->name('getcalendrier');
+Route::get('/article/{id}', [astamController::class, 'detailArticle'])->name('article.show');
+
 
 });
 
