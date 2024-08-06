@@ -31,7 +31,122 @@
     <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
   </head>
   <style>
-
+    .blog-image img {
+        width: 300%; /* Pour que les images remplissent le conteneur */
+        height: 300px; /* Hauteur fixe pour toutes les images */
+        object-fit: cover; /* Pour que les images gardent leur proportion en remplissant le conteneur */
+    }
+    .blog-post {
+        margin-bottom: 20px;
+    }
+    
+    .video-post {
+      margin-bottom: 20px;
+    }
+  
+  .video-image {
+      position: relative;
+    }
+  
+  .video-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+  .video-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: #fff;
+    }
+  
+  .video-post-details {
+      padding: 10px;
+      background: #000;
+      color: #fff;
+    }
+  
+  .video-title a, .video-view a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+  .video-title a:hover, .video-view a:hover {
+      text-decoration: underline;
+    }
+  .aaaa {
+    width : 100px;
+    height : 80px ;
+    }
+  
+   .latest-news {
+    background-color: #1d1f21;
+    padding: 60px 0;
+    }
+  
+  .section-title h2 {
+    color: #f3f1f1;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    }
+  
+  .blog-post {
+    background: #0c0b0b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    }
+  
+  .blog-post:hover {
+    transform: translateY(-10px);
+    }
+  
+  .blog-image img {
+    width: 100%;
+    height: auto;
+    }
+  
+  .blog-post-details {
+    padding: 20px;
+    }
+  
+  .blog-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    }
+  
+  .blog-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    }
+  
+  .blog-title a:hover {
+    color: #007bff;
+    }
+  
+  .blog-post-details p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+    }
+  
+  .read-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    }
+  
+  .read-more:hover {
+    color: #0056b3;
+    }
   </style>
   <body>
     <!--=================================
