@@ -1,0 +1,2 @@
+Nom BDD : c2394992c_astam
+L’utilisateur « c2394992c_regis » a été ajouté à la base de données « c2394992c_astam ».
