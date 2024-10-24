@@ -34,6 +34,10 @@ class astamController extends Controller
         
     }
 
+    public function coming(){
+        return view('user.coming');
+    }
+
 
     public function calendrier(){
         $calendar = Calendrier::latest()->take(10)->get();

@@ -148,31 +148,51 @@
     color: #0056b3;
     }
   </style>
-<!--=================================
-    Error -->
-    <section class="space-ptb">
-      <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="text-center contant-404 mt-4 mt-md-5">
-                  <h1>4<span>0</span>4</h1>
-                  <h2 class="mb-4">Opps! Page introuvable</h2>
-                  <p class="mb-4 mb-md-5 px-3">Can't find what you looking for? Take a moment and do a search below or start from our <a href="{{route('getindex')}}" class=" text-primary">Home Page</a></p>
-                  <a href="{{route('get404')}}" class="btn btn-primary"><i class="fas fa-home me-2"></i>Back to Home</a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
     <!--=================================
-    Error -->
-
+    Coming Soon -->
+    <section class="coming-soon-section bg-overlay-black-8 space-ptb d-flex justify-content-center align-items-center" style="background: url(images/bg/coming-soon.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 my-4 text-center">
+            <a class="coming-soon-logo mb-4" href="">
+              <img class="logo img-fluid" src="{{asset('asset/images/logo1.png')}}" alt="logo">
+            </a>
+            <p class="lead mb-4 mb-md-5 px-3 text-white">We are working very hard on the new version of our site. It will bring a lot of new features.<br> stay tuned!</p>
+            <h1 class="text-white">Coming Soon</h1>
+               <div class="countdown-main">
+                <div class="countdown">
+                <span class="days">00</span>
+                  <p class="days_ref">Days</p>
+                </div>
+                <div class="countdown">
+                  <span class="hours">00</span>
+                  <p class="hours_ref">Hours</p>
+                </div>
+                <div class="countdown">
+                  <span class="minutes">00</span>
+                  <p class="minutes_ref">Minutes</p>
+                </div>
+                <div class="countdown">
+                  <span class="seconds">00</span>
+                  <p class="seconds_ref">Seconds</p>
+                </div>
+               </div>
+            <a class="mt-5 text-white" href="#">Provide your email address & we will notify you when site is ready:</a>
+            <div class="row justify-content-center">
+              <div class="col-xl-6 col-lg-7 col-md-9">
+                <form class="coming-soon-form mt-3">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your email address">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Notify Me</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br> <br> <br><br> <br> <br> <hr>
+    <!--=================================
+    Coming Soon -->
       
-
-      <!--=================================
-      Back To Top-->
-      <div id="back-to-top" class="back-to-top">
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
-      </div> <br> <br> <br>
-      <!--=================================
-      Back To Top-->
