@@ -29,7 +29,7 @@ class astamController extends Controller
         $video = Video::latest()->take(6)->get();;
         // Seuls les six derniers éléments pourront s'afficher sur la page
         $actualite = Actualite::latest()->take(6)->get();
-        return view('user.index', compact('actualite','video'));
+        return view('user.404', compact('actualite','video'));
 
         
     }

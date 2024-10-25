@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Route;
 */
 //// Nos routes get
 Route::middleware('langage')->group(function () {
-    Route::get('/', [astamController::class,'index'])->name('get404');
+    Route::get('/', [astamController::class,'index'])->name('getindex');
     Route::get('essai', [astamController::class,'essai'])->name('getessai');
     Route::get('404', [astamController::class,'h404'])->name('get404');
     Route::get('coming', [astamController::class,'coming'])->name('getcoming');
